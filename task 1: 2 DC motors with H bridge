@@ -1,0 +1,23 @@
+void setup()
+{
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+
+
+}
+
+void loop()
+{
+  digitalWrite(2, 1);  // المحرك الاول يدور عكس عقارب الساعة
+  digitalWrite(3, 0);
+  delay(1000); 
+  digitalWrite(2, 0);   // يتوقف المحرك الاول
+  digitalWrite(3, 0);
+  digitalWrite(4, 0);   // المحرك الثاني يدور مع عقارب الساعة
+  digitalWrite(5, 1);
+  delay(1000); 
+  digitalWrite(4, 0);  // يتوقف المحرك الثاني
+  digitalWrite(5, 0);
+}
